@@ -44,8 +44,15 @@
 		</Linker>
 		<Unit filename="include/GameObject.h" />
 		<Unit filename="include/Quadtree.h" />
-		<Unit filename="src/GameObject.cpp" />
-		<Unit filename="src/Quadtree.cpp" />
+		<Unit filename="src/GameObject.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/Quadtree.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
