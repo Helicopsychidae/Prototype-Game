@@ -37,16 +37,26 @@
 			<Add directory="$(#boost.include)" />
 		</Compiler>
 		<Linker>
-			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lboost_unit_test_framework" />
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/mingw_dev_lib/SDL2-devel-2.0.3-mingw/SDL2-2.0.3/i686-w64-mingw32/lib" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/mingw_dev_lib/SDL2_image-2.0.0/i686-w64-mingw32/lib" />
 			<Add directory="$(#boost.include)" />
 		</Linker>
 		<Unit filename="include/GameObject.h" />
 		<Unit filename="include/Quadtree.h" />
-		<Unit filename="src/GameObject.cpp" />
-		<Unit filename="src/Quadtree.cpp" />
-		<Unit filename="tests/QuadtreeTest.cpp" />
+		<Unit filename="src/GameObject.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/Quadtree.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="tests/QuadtreeTest.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
