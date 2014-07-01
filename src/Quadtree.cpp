@@ -16,8 +16,7 @@ const int Quadtree::MAX_DEPTH = 10;
 //Maximum number of members of a Quadtree node after which a node must be split.
 const int Quadtree::MAX_MEMBERS = 4;
 
-Quadtree::Quadtree(int level, SDL_Rect rect_size)
-{
+Quadtree::Quadtree(int level, SDL_Rect rect_size){
     //Depth of current Quadtree node.
     depth = level;
 
@@ -33,8 +32,7 @@ Quadtree::Quadtree(int level, SDL_Rect rect_size)
 
 }
 
-Quadtree::~Quadtree()
-{
+Quadtree::~Quadtree(){
     //Clear tree.
     clear_tree();
 
@@ -48,8 +46,7 @@ Quadtree::~Quadtree()
      members = NULL;
 }
 
-Quadtree::clear_tree()
-{
+Quadtree::clear_tree(){
     //Clear member elements.
     members.clear();
 
@@ -65,8 +62,7 @@ Quadtree::clear_tree()
     }
 }
 
-Quadtree::split_tree()
-{
+Quadtree::split_tree(){
     int half_width = (bounds.w / 2);
     int half_height = (bounds.h / 2);
 
@@ -77,8 +73,7 @@ Quadtree::split_tree()
 
 }
 
-Quadtree::make_rect(int width, int height, int x, int y)
-{
+Quadtree::make_rect(int width, int height, int x, int y){
     SDL_Rect rectangle;
     rectangle.w = width;
     rectangle.h = height;
@@ -88,8 +83,7 @@ Quadtree::make_rect(int width, int height, int x, int y)
 }
 
 //Get which node an object belongs to. Returns -1 for parent node.
-Quadtree::get_quadrant_index(GameObject entity)
-{
+Quadtree::get_quadrant_index(GameObject entity){
     int quad_index = -1;
     SDL_Rect hitbox = entity.getHitbox();
 

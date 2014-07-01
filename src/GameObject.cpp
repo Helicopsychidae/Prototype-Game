@@ -1,12 +1,10 @@
 #include "GameObject.h"
 
-GameObject::GameObject()
-{
+GameObject::GameObject(){
     //ctor
 }
 
-GameObject::~GameObject()
-{
+GameObject::~GameObject(){
     //dtor
 }
 
@@ -14,17 +12,14 @@ GameObject::~GameObject()
 //Hitbox class
 // TODO (Julien#4#): Implement convex polygon hitboxes
 // TODO (Julien#4#): Add Separating axis theorem collision detection
-Hitbox::Hitbox()
-{
+Hitbox::Hitbox(){
 
 }
 
-Hitbox::~Hitbox()
-{
+Hitbox::~Hitbox(){
 
 }
 
-Hitbox::is_colliding()
-{
+Hitbox::is_colliding(){
 
 }

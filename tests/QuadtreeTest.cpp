@@ -6,7 +6,13 @@
 
 BOOST_AUTO_TEST_CASE(testConstruction)
 {
-    SDL_Rect space = {0 , 0, 100, 200};
+    SDL_Rect space;
+    space.x = 0;
+    space.y = 0;
+    space.h = 100;
+    space.w = 100;
     Quadtree test_tree = Quadtree(0, space);
+
+    BOOST_CHECK(test_tree != NULL)
 
 }

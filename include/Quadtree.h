@@ -1,9 +1,9 @@
 #ifndef QUADTREE_H
 #define QUADTREE_H
+#include <SDL.h>
+#include <GameObject.h>
 
-
-class Quadtree
-{
+class Quadtree{
     public:
         Quadtree(int level, SDL_Rect rect_size);
         ~Quadtree();
